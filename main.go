@@ -129,14 +129,16 @@ func webhookPostAction(w http.ResponseWriter, r *http.Request) {
 	for _, event := range messagingEvents {
 		senderID := event.Sender.ID
 		if &event.Message != nil && event.Message.Text != "" {
-			if messageForButton(event.Message.Text) {
-				//if false {
-				message := getReplyMessage(event.Message.Text)
-				sendButtonMessage(senderID, message)
-			} else {
-				message := getReplyMessage(event.Message.Text)
-				sendTextMessage(senderID, message)
-			}
+			// TODO: Fix sendButtonMessage function
+			//if messageForButton(event.Message.Text) {
+			//	message := getReplyMessage(event.Message.Text)
+			//	sendButtonMessage(senderID, message)
+			//} else {
+			//	message := getReplyMessage(event.Message.Text)
+			//	sendTextMessage(senderID, message)
+			//}
+			message := getReplyMessage(event.Message.Text)
+			sendTextMessage(senderID, message)
 		}
 	}
 	fmt.Fprintf(w, "Success")
