@@ -1,0 +1,6 @@
+{
+	"ImportPath": "projects/go-bot",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v67",
+	"Deps": []
+}
