@@ -1,1 +1,1 @@
-web: go-bot
+web: facebook-messenger-golang-bot
