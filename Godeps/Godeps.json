@@ -1,5 +1,5 @@
 {
-	"ImportPath": "projects/go-bot",
+	"ImportPath": "projects/facebook-messenger-golang-bot",
 	"GoVersion": "go1.6",
 	"GodepVersion": "v67",
 	"Deps": []

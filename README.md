@@ -17,6 +17,8 @@ $ PORT=5000 facebook-messenger-golang-bot
 
 ### Deploy to Heroku
 
+https://devcenter.heroku.com/articles/getting-started-with-go#set-up
+
 ```bash
 $ heroku login
 $ heroku create
